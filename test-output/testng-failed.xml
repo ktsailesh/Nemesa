@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="www.rest.api.restapi.Rest2">
+      <class name="www.rest.api.restapi.WeatherAPI">
         <methods>
-          <include name="test"/>
+          <include name="setup"/>
+          <include name="weatherTest"/>
+          <include name="cleanup"/>
         </methods>
-      </class> <!-- www.rest.api.restapi.Rest2 -->
+      </class> <!-- www.rest.api.restapi.WeatherAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
